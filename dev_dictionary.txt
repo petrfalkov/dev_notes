@@ -10,11 +10,21 @@ get -r dir_name
 ñtrl + z - to stop transfering
 fg - to resume
 
-//dump db for nvacp
-//put folder to production server
-//make it work
-//make not in wiki about this project
-
+//git
+# to reset all on your machine and take files from master
+  git reset --hard
+# to create a new branch
+  git checkout -b name_of_a_branch
+# to make pull request
+	git add files
+	git commit -m 'commit_message'
+	# for a single push
+	  git push origin name_of_a_branch
+	# to set a branch to origin on remote, and push there automaticaly using git push
+  	  git push --set-upstream origin name_of_branch 
+# to pull from branch
+  git pull origin name_of_branch
+ 
 //to connect to a server
 ssh usrname@serverdomain
 
@@ -27,3 +37,20 @@ otap update siteName (example: www.nvacp.nl)
 
 //update project hard
 otap update --skip-permissions --skip-deps .
+
+
+//find a file
+find [where to find] -name "[name of the file]"
+example: find / -name "*log*"
+
+//services
+sudo service apache2 [ reload | restart | start | stop | status ]
+
+//logs 
+	    /etc/apache2/log/
+	    /var/log/
+also can be /tmp/ 		folder and logs in it
+
+tail -f [path to log]
+
+
