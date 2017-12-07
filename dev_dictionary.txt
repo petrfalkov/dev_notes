@@ -38,6 +38,8 @@ otap update siteName (example: www.nvacp.nl)
 //update project hard
 otap update --skip-permissions --skip-deps .
 
+//create link
+ln -s path/to/what/you/want/to/link
 
 //find a file
 find [where to find] -name "[name of the file]"
@@ -52,5 +54,8 @@ sudo service apache2 [ reload | restart | start | stop | status ]
 also can be /tmp/ 		folder and logs in it
 
 tail -f [path to log]
+
+
+
 
 
