@@ -1,0 +1,29 @@
+#localStorage jQuery
+localStorage.setItem('item', value);
+localStorage.getItem('item');
+if(localStorage.getItem('item') !== null) //not undefined
+
+#coppy from server to locale using sftp
+#https://www.digitalocean.com/community/tutorials/how-to-use-sftp-to-securely-transfer-files-with-a-remote-server
+sftp username@name_of_server_or_ip
+get -r dir_name
+ñtrl + z - to stop transfering
+fg - to resume
+
+//dump db for nvacp
+//put folder to production server
+//make it work
+//make not in wiki about this project
+
+//to connect to a server
+ssh usrname@serverdomain
+
+//to have access to all dirs on 78.31.115.84 (new phoundry prod server)
+sudo -i
+//to update source using otap on 78.31.115.84
+sudo -i
+su - proj_name -s /bin/bash
+otap update siteName (example: www.nvacp.nl)
+
+//update project hard
+otap update --skip-permissions --skip-deps .
