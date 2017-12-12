@@ -38,8 +38,6 @@ otap update siteName (example: www.nvacp.nl)
 //update project hard
 otap update --skip-permissions --skip-deps .
 
-//create link
-ln -s path/to/what/you/want/to/link
 
 //find a file
 find [where to find] -name "[name of the file]"
@@ -56,6 +54,17 @@ also can be /tmp/ 		folder and logs in it
 tail -f [path to log]
 
 
+//error lvls management
+Example:
+`error_reporting = E_ALL & ~E_NOTICE`
+Can be setuped: 
+1.	localy in file by function `error_reporting([params]);`
+	1. `Without params` - will return current error_reporting lvl on this line
+	2. `-1` - will set up all error log output
 
+2. 	As server config in php.ini file `error_reporting = [params]`
 
+//GLOBAL_VARS for configs in php
 
+Used for easy changing configs, if server has a different structure and needs to be changed.
+define( 'PROJECT_DIR', [value] ); 
